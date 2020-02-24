@@ -48,4 +48,9 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(0,2,'X'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(0,2,'0'), is(POSITION_IS_INVALID));
     }
+
+    @Test
+    public void ticTacToeGameShouldReturn_InvalidPositionMessage_IfRowIsGreaterThan4OutOfBoardDimension() {
+        assertThat(ticTacToeGame.playGame(6,2,'0'), is(POSITION_IS_INVALID));
+    }
 }
