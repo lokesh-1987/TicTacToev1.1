@@ -80,4 +80,10 @@ class TicTacToeBoard {
                 && this.getValue(2,4) == value
                 && this.getValue(4,4) == value;
     }
+
+    public boolean isEitherOfColFullOfEitherXOr0(char value) {
+        return isFirstColFullOfEitherXOr0(value)
+                || isSecondColFullOfEitherXOr0(value)
+                || isLastColFullOfEitherXOr0(value);
+    }
 }
