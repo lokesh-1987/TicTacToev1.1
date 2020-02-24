@@ -67,4 +67,9 @@ public class TicTacToeBoardTest {
     public void ticTacToeBoarShouldReturnTrueIfRowIsGreaterThan4OutOfBoardDimension() {
         assertTrue(ticTacToeBoard.isRowOutOfBoardDimension(6));
     }
+
+    @Test
+    public void ticTacToeBoarShouldReturnTrueIfRowIsLessThan0OutOfBoardDimension() {
+        assertTrue(ticTacToeBoard.isRowOutOfBoardDimension(-1));
+    }
 }
