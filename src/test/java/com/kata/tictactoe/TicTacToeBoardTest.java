@@ -12,4 +12,10 @@ public class TicTacToeBoardTest {
         TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
         assertThat(ticTacToeBoard.board.length, is(5));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnColumnLengthOf5AfterInitialization() {
+        TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
+        assertThat(ticTacToeBoard.board[0].length, is(5));
+    }
 }
