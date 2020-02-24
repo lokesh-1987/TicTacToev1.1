@@ -1,6 +1,6 @@
 package com.kata.tictactoe;
 
-public enum Position {
+enum Position {
     ONE(0,0);
 
     private final int row;
@@ -11,7 +11,7 @@ public enum Position {
         this.column = column;
     }
 
-    public int getRow() {
+    int getRow() {
         return this.row;
     }
 }
