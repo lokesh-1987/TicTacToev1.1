@@ -26,4 +26,8 @@ class TicTacToeBoard {
     boolean isPositionOccupied(int row, int col) {
         return this.getValue(row,col) == 'X' || this.getValue(row, col) == '0';
     }
+
+    public boolean isRowOutOfBoardDimension(int row) {
+        return row > 4;
+    }
 }
