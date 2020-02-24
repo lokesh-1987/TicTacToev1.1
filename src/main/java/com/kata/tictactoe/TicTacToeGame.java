@@ -24,6 +24,8 @@ class TicTacToeGame {
             return PLAYER +value+ WON;
         } else if (ticTacToeBoard.isFirstColFullOfEitherXOr0(value)) {
             return PLAYER +value+ WON;
+        } else if (ticTacToeBoard.isSecondColFullOfEitherXOr0(value)) {
+            return PLAYER +value+ WON;
         }
         return EMPTY_STRING;
     }
