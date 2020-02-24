@@ -173,4 +173,11 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(4,0,'X');
         assertTrue(ticTacToeBoard.isFirstColFullOfEitherXOr0('X'));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnFalseIfFirstColIsNotFullOfX() {
+        ticTacToeBoard.setValue(0,0,'X');
+        ticTacToeBoard.setValue(4,0,'X');
+        assertFalse(ticTacToeBoard.isFirstColFullOfEitherXOr0('X'));
+    }
 }
