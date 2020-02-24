@@ -196,4 +196,12 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(4,2,'X');
         assertTrue(ticTacToeBoard.isSecondColFullOfEitherXOr0('X'));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnFalseIfSecondColIsNotFullOfX() {
+        ticTacToeBoard.setValue(0,2,'0');
+        ticTacToeBoard.setValue(2,2,'X');
+        ticTacToeBoard.setValue(4,2,'X');
+        assertFalse(ticTacToeBoard.isSecondColFullOfEitherXOr0('X'));
+    }
 }
