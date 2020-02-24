@@ -62,4 +62,8 @@ class TicTacToeBoard {
                 || isSecondRowFullOfEitherXOr0(value)
                 || isLastRowFullOfEitherXOr0(value);
     }
+
+    public boolean isFirstColFullOfEitherXOr0(char value) {
+        return true;
+    }
 }
