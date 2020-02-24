@@ -64,6 +64,8 @@ class TicTacToeBoard {
     }
 
     public boolean isFirstColFullOfEitherXOr0(char value) {
-        return true;
+        return this.getValue(0,0) == value
+                && this.getValue(2,0) == value
+                && this.getValue(4,0) == value;
     }
 }
