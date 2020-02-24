@@ -1,14 +1,15 @@
 package com.kata.tictactoe;
 
-import org.hamcrest.core.Is;
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class PlayerTest {
 
     @Test
     public void playerSymbolIsXIfInitializedWithX() {
         Player player = Player.X;
-        Assert.assertThat(player.getPlayerSymbol(), Is.is('X'));
+        assertThat(player.getPlayerSymbol(), is('X'));
     }
 }
