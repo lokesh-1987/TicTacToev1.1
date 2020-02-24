@@ -75,7 +75,7 @@ class TicTacToeBoard {
                 && this.getValue(4,2) == value;
     }
 
-    public boolean isLastColFullOfEitherXOr0(char value) {
+    boolean isLastColFullOfEitherXOr0(char value) {
         return this.getValue(0,4) == value
                 && this.getValue(2,4) == value
                 && this.getValue(4,4) == value;
