@@ -9,6 +9,7 @@ import static org.junit.Assert.assertThat;
 public class TicTacToeGameTest {
 
     private static final String EMPTY_STRING = "";
+    private static final String GAME_IS_DRAW = "Game is Draw!";
     private TicTacToeGame ticTacToeGame;
     private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
 
@@ -38,6 +39,6 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(2,4,'0'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(4,2,'X'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(4,0,'0'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(4,4,'X'), is("Game is Draw!"));
+        assertThat(ticTacToeGame.playGame(4,4,'X'), is(GAME_IS_DRAW));
     }
 }
