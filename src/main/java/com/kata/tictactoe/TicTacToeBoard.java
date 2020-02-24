@@ -39,7 +39,7 @@ class TicTacToeBoard {
         return isRowOutOfBoardDimension(row) || isColOutOfBoardDimension(col) || isPositionOccupied(row,col);
     }
 
-    public boolean isFirstRowFullOf0(char value) {
+    boolean isFirstRowFullOf0(char value) {
         return true;
     }
 }
