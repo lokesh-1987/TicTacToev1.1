@@ -19,7 +19,7 @@ class TicTacToeBoard {
         this.board[row][col] = value;
     }
 
-    public char getValue(int row, int col) {
+    char getValue(int row, int col) {
         return this.board[row][col];
     }
 }
