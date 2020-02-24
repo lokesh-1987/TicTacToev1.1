@@ -22,9 +22,7 @@ class TicTacToeGame {
             return GAME_IS_DRAW;
         } else if (ticTacToeBoard.isEitherOfRowFullOfEitherXOr0(value)) {
             return PLAYER +value+ WON;
-        } else if (ticTacToeBoard.isFirstColFullOfEitherXOr0(value)) {
-            return PLAYER +value+ WON;
-        } else if (ticTacToeBoard.isSecondColFullOfEitherXOr0(value)) {
+        } else if (ticTacToeBoard.isEitherOfColFullOfEitherXOr0(value)) {
             return PLAYER +value+ WON;
         }
         return EMPTY_STRING;
