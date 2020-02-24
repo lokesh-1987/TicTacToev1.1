@@ -100,6 +100,6 @@ class TicTacToeBoard {
     }
 
     public boolean isEitherOfDiagonalFullOfEitherXOr0(char value) {
-        return true;
+        return isFirstDiagonalFullOfEitherXOr0(value) || isSecondDiagonalFullOfEitherXOr0(value);
     }
 }
