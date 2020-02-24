@@ -22,6 +22,8 @@ class TicTacToeGame {
             return GAME_IS_DRAW;
         } else if (ticTacToeBoard.isFirstRowFullOfEitherXOr0(value)) {
             return PLAYER +value+ WON;
+        } else if (ticTacToeBoard.isLastRowFullOfEitherXOr0(value)) {
+            return PLAYER +value+ WON;
         }
         return EMPTY_STRING;
     }
