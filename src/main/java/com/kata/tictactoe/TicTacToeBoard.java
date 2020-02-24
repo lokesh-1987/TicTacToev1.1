@@ -34,4 +34,8 @@ class TicTacToeBoard {
     boolean isColOutOfBoardDimension(int col) {
         return col < 0 || col > 4;
     }
+
+    public boolean isInvalidPosition(int row, int col) {
+        return isRowOutOfBoardDimension(row) || isColOutOfBoardDimension(col) || isPositionOccupied(row,col);
+    }
 }
