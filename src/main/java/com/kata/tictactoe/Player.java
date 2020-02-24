@@ -1,6 +1,6 @@
 package com.kata.tictactoe;
 
-public enum Player {
+enum Player {
     X('X');
 
     private char symbol;
@@ -9,7 +9,7 @@ public enum Player {
         this.symbol = symbol;
     }
 
-    public char getPlayerSymbol() {
+    char getPlayerSymbol() {
         return this.symbol;
     }
 }
