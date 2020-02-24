@@ -18,4 +18,8 @@ class TicTacToeBoard {
     void setValue(int row, int col, char value) {
         this.board[row][col] = value;
     }
+
+    public char getValue(int row, int col) {
+        return '0';
+    }
 }

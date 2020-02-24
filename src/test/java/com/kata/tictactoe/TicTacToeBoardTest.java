@@ -43,4 +43,10 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(2,2,'X');
         assertThat(ticTacToeBoard.board[2][2], is('X'));
     }
+
+    @Test
+    public void ticTacToeBoardShouldSetValeAsOAndGetSameValueAtIndex_2_0() {
+        ticTacToeBoard.setValue(2,0,'0');
+        assertThat(ticTacToeBoard.getValue(2, 0), is('0'));
+    }
 }
