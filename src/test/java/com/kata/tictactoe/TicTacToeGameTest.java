@@ -26,4 +26,17 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(0,0,'X'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(0,2,'0'), is(EMPTY_STRING));
     }
+
+    @Test
+    public void ticTacToeGameShouldReturn_GameIsDrawMessage_ifThePlayersMoveAlternativelyUntilGameIsDraw() {
+        assertThat(ticTacToeGame.playGame(0,0,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,2,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,4,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,2,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,4,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(4,2,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(4,0,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(4,4,'X'), is("Game is Draw!"));
+    }
 }
