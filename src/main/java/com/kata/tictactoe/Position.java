@@ -20,6 +20,9 @@ enum Position {
     }
 
     public Position getPosition(int position) {
-        return Position.ONE;
+        if (position == 1) {
+            return Position.ONE;
+        }
+        return null;
     }
 }
