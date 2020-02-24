@@ -19,7 +19,7 @@ enum Position {
         return this.column;
     }
 
-    public Position getPosition(int position) {
+    Position getPosition(int position) {
         if (position == 1) {
             return Position.ONE;
         }
