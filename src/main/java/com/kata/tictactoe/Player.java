@@ -13,7 +13,7 @@ enum Player {
         return this.symbol;
     }
 
-    Player switchPlayer(char playerSymbol) {
-        return Player.O;
+    Player switchPlayer(char symbol) {
+        return symbol == Player.X.symbol ? Player.O : Player.X;
     }
 }
