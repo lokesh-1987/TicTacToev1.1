@@ -12,11 +12,7 @@ class TicTacToeGame {
     }
 
     String playGame(int row, int col, char value) {
-        if (ticTacToeBoard.isRowOutOfBoardDimension(row)) {
-            return POSITION_IS_INVALID;
-        } else if (ticTacToeBoard.isColOutOfBoardDimension(col)) {
-            return POSITION_IS_INVALID;
-        } else if(ticTacToeBoard.isPositionOccupied(row,col)) {
+        if (ticTacToeBoard.isInvalidPosition(row,col)) {
             return POSITION_IS_INVALID;
         }
         ticTacToeBoard.setValue(row,col,value);
