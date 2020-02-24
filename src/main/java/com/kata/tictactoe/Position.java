@@ -12,6 +12,6 @@ public enum Position {
     }
 
     public int getRow() {
-        return 0;
+        return this.row;
     }
 }
