@@ -32,6 +32,6 @@ class TicTacToeBoard {
     }
 
     boolean isColOutOfBoardDimension(int col) {
-        return col < 0;
+        return col < 0 || col > 4;
     }
 }
