@@ -18,15 +18,18 @@ class TicTacToeGame {
             return POSITION_IS_INVALID;
         }
         ticTacToeBoard.setValue(row,col,value);
+
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
-        } else if (ticTacToeBoard.isEitherOfRowFullOfEitherXOr0(value)) {
-            return PLAYER +value+ WON;
-        } else if (ticTacToeBoard.isEitherOfColFullOfEitherXOr0(value)) {
-            return PLAYER +value+ WON;
-        } else if (ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0(value)) {
+        } else if (isGameWonByEitherPlayer(value)) {
             return PLAYER +value+ WON;
         }
         return EMPTY_STRING;
+    }
+
+    private boolean isGameWonByEitherPlayer(char value) {
+        return ticTacToeBoard.isEitherOfRowFullOfEitherXOr0(value)
+                || ticTacToeBoard.isEitherOfColFullOfEitherXOr0(value)
+                || ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0(value);
     }
 }
