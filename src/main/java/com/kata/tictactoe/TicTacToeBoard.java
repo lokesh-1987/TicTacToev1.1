@@ -40,6 +40,8 @@ class TicTacToeBoard {
     }
 
     boolean isFirstRowFullOf0(char value) {
-        return true;
+        return this.getValue(0,0) == value
+                && this.getValue(0,2) == value
+                && this.getValue(0,4) == value;
     }
 }
