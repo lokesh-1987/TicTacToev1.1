@@ -18,4 +18,10 @@ public class PlayerTest {
         Player player = Player.O;
         assertThat(player.getPlayerSymbol(), is('0'));
     }
+
+    @Test
+    public void playerSymbolIsSwitchedToOIfInitializedWithX() {
+        Player player = Player.X;
+        assertThat(player.switchPlayer(player.getPlayerSymbol()), is(Player.O));
+    }
 }
