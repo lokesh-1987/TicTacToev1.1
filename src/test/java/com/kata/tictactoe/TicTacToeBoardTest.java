@@ -87,4 +87,12 @@ public class TicTacToeBoardTest {
     public void ticTacToeBoarShouldReturnTrueForInvalidPositions() {
         assertTrue(ticTacToeBoard.isInvalidPosition(2, 6));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfFirstRowIsFullOfO() {
+        ticTacToeBoard.setValue(0,0,'0');
+        ticTacToeBoard.setValue(0,2,'0');
+        ticTacToeBoard.setValue(0,4,'0');
+        assertTrue(ticTacToeBoard.isFirstRowFullOf0('0'));
+    }
 }
