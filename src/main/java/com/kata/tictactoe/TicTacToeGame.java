@@ -18,6 +18,8 @@ class TicTacToeGame {
         ticTacToeBoard.setValue(row,col,value);
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
+        } else if (ticTacToeBoard.isFirstRowFullOfEitherXOr0(value)) {
+            return "Player "+value+ " Won!";
         }
         return EMPTY_STRING;
     }

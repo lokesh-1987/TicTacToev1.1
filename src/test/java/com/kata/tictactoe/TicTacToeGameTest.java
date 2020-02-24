@@ -58,4 +58,13 @@ public class TicTacToeGameTest {
     public void ticTacToeGameShouldReturn_InvalidPositionMessage_IfColIsGreaterThan4OutOfBoardDimension() {
         assertThat(ticTacToeGame.playGame(2,8,'0'), is(POSITION_IS_INVALID));
     }
+
+    @Test
+    public void ticTacToeGameShouldReturn_WinningMessage_IfPlayerXCompletesFirstRow() {
+        assertThat(ticTacToeGame.playGame(0,0,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,2,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,4,'X'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(2,0,'0'), is(EMPTY_STRING));
+        assertThat(ticTacToeGame.playGame(0,2,'X'), is("Player X Won!"));
+    }
 }
