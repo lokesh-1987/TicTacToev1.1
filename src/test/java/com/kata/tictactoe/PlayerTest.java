@@ -12,4 +12,10 @@ public class PlayerTest {
         Player player = Player.X;
         assertThat(player.getPlayerSymbol(), is('X'));
     }
+
+    @Test
+    public void playerSymbolIsOIfInitializedWithO() {
+        Player player = Player.O;
+        assertThat(player.getPlayerSymbol(), is('0'));
+    }
 }
