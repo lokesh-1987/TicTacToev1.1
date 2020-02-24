@@ -15,7 +15,7 @@ enum Position {
         return this.row;
     }
 
-    public int getColumn() {
+    int getColumn() {
         return this.column;
     }
 }
