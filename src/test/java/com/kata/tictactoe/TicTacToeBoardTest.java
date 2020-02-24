@@ -109,4 +109,12 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(2,4,'X');
         assertTrue(ticTacToeBoard.isSecondRowFullOfEitherXOr0('X'));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfSecondRowIsFullOf0() {
+        ticTacToeBoard.setValue(2,0,'0');
+        ticTacToeBoard.setValue(2,2,'0');
+        ticTacToeBoard.setValue(2,4,'0');
+        assertTrue(ticTacToeBoard.isSecondRowFullOfEitherXOr0('0'));
+    }
 }
