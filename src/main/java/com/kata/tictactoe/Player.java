@@ -13,7 +13,7 @@ enum Player {
         return this.symbol;
     }
 
-    public Player switchPlayer(char playerSymbol) {
+    Player switchPlayer(char playerSymbol) {
         return Player.O;
     }
 }
