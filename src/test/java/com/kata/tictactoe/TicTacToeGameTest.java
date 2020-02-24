@@ -12,6 +12,7 @@ public class TicTacToeGameTest {
     private static final String GAME_IS_DRAW = "Game is Draw!";
     private static final String POSITION_IS_INVALID = "Position is Invalid!";
     private static final String PLAYER_X_WON = "Player X Won!";
+    private static final String PLAYER_0_WON = "Player 0 Won!";
     private TicTacToeGame ticTacToeGame;
     private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
 
@@ -76,6 +77,6 @@ public class TicTacToeGameTest {
         assertThat(ticTacToeGame.playGame(0,4,'X'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(4,0,'0'), is(EMPTY_STRING));
         assertThat(ticTacToeGame.playGame(2,4,'X'), is(EMPTY_STRING));
-        assertThat(ticTacToeGame.playGame(4,4,'0'), is("Player 0 Won!"));
+        assertThat(ticTacToeGame.playGame(4,4,'0'), is(PLAYER_0_WON));
     }
 }
