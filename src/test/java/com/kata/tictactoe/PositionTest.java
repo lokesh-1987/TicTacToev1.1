@@ -24,4 +24,10 @@ public class PositionTest {
         Position pos = position.getPosition(1);
         assertThat(pos.name(), is(Position.ONE.name()));
     }
+
+    @Test
+    public void positionReturnsTWOIfInitializedWith2() {
+        Position pos = position.getPosition(2);
+        assertThat(pos.name(), is(Position.TWO.name()));
+    }
 }
