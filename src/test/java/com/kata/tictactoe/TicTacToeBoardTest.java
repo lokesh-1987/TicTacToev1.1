@@ -56,4 +56,10 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(2,4,'X');
         assertTrue(ticTacToeBoard.isPositionOccupied(2, 4));
     }
+
+    @Test
+    public void ticTacToeBoardShouldTrueOnceValueOIsOccupiedAtIndex_2_4(){
+        ticTacToeBoard.setValue(2,4,'0');
+        assertTrue(ticTacToeBoard.isPositionOccupied(2, 4));
+    }
 }
