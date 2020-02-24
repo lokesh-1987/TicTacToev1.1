@@ -19,12 +19,16 @@ class TicTacToeGame {
         }
         ticTacToeBoard.setValue(row,col,value);
 
-        if (ticTacToeBoard.isBoardFull()) {
+        if (isGameDraw()) {
             return GAME_IS_DRAW;
         } else if (isGameWonByEitherPlayer(value)) {
             return PLAYER +value+ WON;
         }
         return EMPTY_STRING;
+    }
+
+    private boolean isGameDraw() {
+        return ticTacToeBoard.isBoardFull();
     }
 
     private boolean isGameWonByEitherPlayer(char value) {
