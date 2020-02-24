@@ -30,4 +30,10 @@ public class PositionTest {
         Position pos = position.getPosition(2);
         assertThat(pos.name(), is(Position.TWO.name()));
     }
+
+    @Test
+    public void positionReturnsTHREEIfInitializedWith3() {
+        Position pos = position.getPosition(3);
+        assertThat(pos.name(), is(Position.THREE.name()));
+    }
 }
