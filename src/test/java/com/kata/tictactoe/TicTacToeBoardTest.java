@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class TicTacToeBoardTest {
 
@@ -48,5 +49,11 @@ public class TicTacToeBoardTest {
     public void ticTacToeBoardShouldSetValeAsOAndGetSameValueAtIndex_2_0() {
         ticTacToeBoard.setValue(2,0,'0');
         assertThat(ticTacToeBoard.getValue(2, 0), is('0'));
+    }
+
+    @Test
+    public void ticTacToeBoardShouldTrueOnceValueXIsOccupiedAtIndex_2_4(){
+        ticTacToeBoard.setValue(2,4,'X');
+        assertTrue(ticTacToeBoard.isPositionOccupied(2, 4));
     }
 }
