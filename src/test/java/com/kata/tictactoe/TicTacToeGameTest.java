@@ -10,10 +10,11 @@ public class TicTacToeGameTest {
 
     private static final String EMPTY_STRING = "";
     private TicTacToeGame ticTacToeGame;
+    private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
 
     @Before
     public void setUp() {
-        ticTacToeGame = new TicTacToeGame();
+        ticTacToeGame = new TicTacToeGame(ticTacToeBoard);
     }
 
     @Test

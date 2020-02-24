@@ -3,7 +3,11 @@ package com.kata.tictactoe;
 class TicTacToeGame {
 
     private static final String EMPTY_STRING = "";
-    private TicTacToeBoard ticTacToeBoard = new TicTacToeBoard();
+    private TicTacToeBoard ticTacToeBoard;
+
+    TicTacToeGame(TicTacToeBoard ticTacToeBoard) {
+        this.ticTacToeBoard = ticTacToeBoard;
+    }
 
     String playGame(int row, int col, char value) {
         ticTacToeBoard.setValue(row,col,value);
