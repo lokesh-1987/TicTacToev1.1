@@ -20,9 +20,7 @@ class TicTacToeGame {
         ticTacToeBoard.setValue(row,col,value);
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
-        } else if (ticTacToeBoard.isFirstRowFullOfEitherXOr0(value)) {
-            return PLAYER +value+ WON;
-        } else if (ticTacToeBoard.isLastRowFullOfEitherXOr0(value)) {
+        } else if (ticTacToeBoard.isEitherOfRowFullOfEitherXOr0(value)) {
             return PLAYER +value+ WON;
         }
         return EMPTY_STRING;
