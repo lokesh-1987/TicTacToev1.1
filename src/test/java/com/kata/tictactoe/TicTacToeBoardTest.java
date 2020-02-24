@@ -159,7 +159,7 @@ public class TicTacToeBoardTest {
     }
 
     @Test
-    public void ticTacToeBoardShouldReturnTrueIfFirstRColIsFullOfO() {
+    public void ticTacToeBoardShouldReturnTrueIfFirstColIsFullOfO() {
         ticTacToeBoard.setValue(0,0,'0');
         ticTacToeBoard.setValue(2,0,'0');
         ticTacToeBoard.setValue(4,0,'0');
@@ -167,7 +167,7 @@ public class TicTacToeBoardTest {
     }
 
     @Test
-    public void ticTacToeBoardShouldReturnTrueIfFirstRColIsFullOfX() {
+    public void ticTacToeBoardShouldReturnTrueIfFirstColIsFullOfX() {
         ticTacToeBoard.setValue(0,0,'X');
         ticTacToeBoard.setValue(2,0,'X');
         ticTacToeBoard.setValue(4,0,'X');
@@ -179,5 +179,13 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(0,0,'X');
         ticTacToeBoard.setValue(4,0,'X');
         assertFalse(ticTacToeBoard.isFirstColFullOfEitherXOr0('X'));
+    }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfSecondColIsFullOfO() {
+        ticTacToeBoard.setValue(0,2,'0');
+        ticTacToeBoard.setValue(2,2,'0');
+        ticTacToeBoard.setValue(4,2,'0');
+        assertTrue(ticTacToeBoard.isSecondColFullOfEitherXOr0('0'));
     }
 }
