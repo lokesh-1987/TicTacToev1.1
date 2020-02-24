@@ -1,14 +1,15 @@
 package com.kata.tictactoe;
 
-import org.hamcrest.core.Is;
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class TicTacToeGameTest {
 
     @Test
     public void ticTacToeGameShouldReturn_EmptyString_IfPlayer_X_MovesOn_0_0_Position() {
         TicTacToeGame ticTacToeGame = new TicTacToeGame();
-        Assert.assertThat(ticTacToeGame.playGame(0,0,'X'), Is.is(""));
+        assertThat(ticTacToeGame.playGame(0,0,'X'), is(""));
     }
 }
