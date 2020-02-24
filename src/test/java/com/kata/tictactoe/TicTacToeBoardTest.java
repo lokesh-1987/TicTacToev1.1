@@ -8,6 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class TicTacToeBoardTest {
 
+    private static final int FIVE = 5;
     private TicTacToeBoard ticTacToeBoard;
 
     @Before
@@ -17,11 +18,11 @@ public class TicTacToeBoardTest {
 
     @Test
     public void ticTacToeBoardShouldReturnRowLengthOf5AfterInitialization() {
-        assertThat(ticTacToeBoard.board.length, is(5));
+        assertThat(ticTacToeBoard.board.length, is(FIVE));
     }
 
     @Test
     public void ticTacToeBoardShouldReturnColumnLengthOf5AfterInitialization() {
-        assertThat(ticTacToeBoard.board[0].length, is(5));
+        assertThat(ticTacToeBoard.board[0].length, is(FIVE));
     }
 }
