@@ -93,6 +93,6 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(0,0,'0');
         ticTacToeBoard.setValue(0,2,'0');
         ticTacToeBoard.setValue(0,4,'0');
-        assertTrue(ticTacToeBoard.isFirstRowFullOf0('0'));
+        assertTrue(ticTacToeBoard.isFirstRowFullOfEitherXOr0('0'));
     }
 }

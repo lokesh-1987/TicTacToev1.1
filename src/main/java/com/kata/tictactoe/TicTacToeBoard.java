@@ -39,7 +39,7 @@ class TicTacToeBoard {
         return isRowOutOfBoardDimension(row) || isColOutOfBoardDimension(col) || isPositionOccupied(row,col);
     }
 
-    boolean isFirstRowFullOf0(char value) {
+    boolean isFirstRowFullOfEitherXOr0(char value) {
         return this.getValue(0,0) == value
                 && this.getValue(0,2) == value
                 && this.getValue(0,4) == value;
