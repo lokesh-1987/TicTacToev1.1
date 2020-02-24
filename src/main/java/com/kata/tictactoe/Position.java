@@ -18,4 +18,8 @@ enum Position {
     int getColumn() {
         return this.column;
     }
+
+    public Position getPosition(int position) {
+        return Position.ONE;
+    }
 }

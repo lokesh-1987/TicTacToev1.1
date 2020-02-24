@@ -18,4 +18,11 @@ public class PositionTest {
         Position position = Position.ONE;
         assertThat(position.getColumn(), is(0));
     }
+
+    @Test
+    public void positionReturnsONEIfInitializedWith1() {
+        Position position = Position.ONE;
+        Position pos = position.getPosition(1);
+        assertThat(pos.name(), is(Position.ONE.name()));
+    }
 }
