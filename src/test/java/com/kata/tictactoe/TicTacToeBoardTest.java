@@ -274,4 +274,18 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setValue(4,4,'X');
         assertTrue(ticTacToeBoard.isEitherOfDiagonalFullOfEitherXOr0('X'));
     }
+
+    @Test
+    public void ticTacToeBoardShouldReturnTrueIfFull() {
+        ticTacToeBoard.setValue(0,0,'0');
+        ticTacToeBoard.setValue(0,2,'0');
+        ticTacToeBoard.setValue(0,4,'0');
+        ticTacToeBoard.setValue(2,0,'0');
+        ticTacToeBoard.setValue(2,2,'0');
+        ticTacToeBoard.setValue(2,4,'0');
+        ticTacToeBoard.setValue(4,0,'0');
+        ticTacToeBoard.setValue(4,2,'0');
+        ticTacToeBoard.setValue(4,4,'0');
+        assertTrue(ticTacToeBoard.isBoardFull());
+    }
 }
