@@ -11,6 +11,9 @@ class TicTacToeGame {
     }
 
     String playGame(int row, int col, char value) {
+        if (ticTacToeBoard.isPositionOccupied(row,col)) {
+            return "Position is Invalid!";
+        }
         ticTacToeBoard.setValue(row,col,value);
         if (ticTacToeBoard.isBoardFull()) {
             return GAME_IS_DRAW;
