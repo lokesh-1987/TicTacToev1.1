@@ -37,4 +37,10 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setUpBoard();
         assertArrayEquals(ticTacToeBoard.board, this.board);
     }
+
+    @Test
+    public void ticTacToeBoardShouldSetValeAsXAtIndex_2_2() {
+        ticTacToeBoard.setValue(2,2,'X');
+        assertThat(ticTacToeBoard.board[2][2], is('X'));
+    }
 }
