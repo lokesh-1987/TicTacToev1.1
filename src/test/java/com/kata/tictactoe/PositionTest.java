@@ -60,4 +60,10 @@ public class PositionTest {
         Position pos = position.getPosition(7);
         assertThat(pos.name(), is(Position.SEVEN.name()));
     }
+
+    @Test
+    public void positionReturnsEIGHTIfInitializedWith8() {
+        Position pos = position.getPosition(8);
+        assertThat(pos.name(), is(Position.EIGHT.name()));
+    }
 }
