@@ -115,6 +115,11 @@ class TicTacToeBoard {
     }
 
     public void displayBoard() {
-        System.out.println("displayBoard");
+        for (char[] row : this.board){
+            for (char c : row) {
+                System.out.print(c);
+            }
+            System.out.println();
+        }
     }
 }
