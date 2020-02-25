@@ -48,4 +48,10 @@ public class PositionTest {
         Position pos = position.getPosition(5);
         assertThat(pos.name(), is(Position.FIVE.name()));
     }
+
+    @Test
+    public void positionReturnsSIXIfInitializedWith6() {
+        Position pos = position.getPosition(6);
+        assertThat(pos.name(), is(Position.SIX.name()));
+    }
 }
