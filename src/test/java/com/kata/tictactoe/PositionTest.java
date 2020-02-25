@@ -36,4 +36,10 @@ public class PositionTest {
         Position pos = position.getPosition(3);
         assertThat(pos.name(), is(Position.THREE.name()));
     }
+
+    @Test
+    public void positionReturnsFOURIfInitializedWith4() {
+        Position pos = position.getPosition(4);
+        assertThat(pos.name(), is(Position.FOUR.name()));
+    }
 }
