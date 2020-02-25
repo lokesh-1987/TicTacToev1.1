@@ -54,4 +54,10 @@ public class PositionTest {
         Position pos = position.getPosition(6);
         assertThat(pos.name(), is(Position.SIX.name()));
     }
+
+    @Test
+    public void positionReturnsSEVENIfInitializedWith7() {
+        Position pos = position.getPosition(7);
+        assertThat(pos.name(), is(Position.SEVEN.name()));
+    }
 }
