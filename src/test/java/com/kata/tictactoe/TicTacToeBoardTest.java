@@ -294,4 +294,13 @@ public class TicTacToeBoardTest {
         ticTacToeBoard.setUpBoard();
         ticTacToeBoard.displayBoard();
     }
+
+    @Test
+    public void ticTacToeBoardShouldBeDisplayedAfterEachMove() {
+        ticTacToeBoard.setUpBoard();
+        ticTacToeBoard.displayBoard();
+        ticTacToeBoard.setValue(0,0,'X');
+        ticTacToeBoard.displayBoard();
+        assertThat(ticTacToeBoard.getValue(0,0), is('X'));
+    }
 }
