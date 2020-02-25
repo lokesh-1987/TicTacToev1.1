@@ -42,4 +42,10 @@ public class PositionTest {
         Position pos = position.getPosition(4);
         assertThat(pos.name(), is(Position.FOUR.name()));
     }
+
+    @Test
+    public void positionReturnsFIVEIfInitializedWith5() {
+        Position pos = position.getPosition(5);
+        assertThat(pos.name(), is(Position.FIVE.name()));
+    }
 }
