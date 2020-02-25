@@ -72,4 +72,10 @@ public class PositionTest {
         Position pos = position.getPosition(9);
         assertThat(pos.name(), is(Position.NINE.name()));
     }
+
+    @Test
+    public void positionReturnsINVALIDIfInitializedWithOtherThan1To9() {
+        Position pos = position.getPosition(12);
+        assertThat(pos.name(), is(Position.INVALID.name()));
+    }
 }

@@ -1,7 +1,7 @@
 package com.kata.tictactoe;
 
 enum Position {
-    ONE(0,0), TWO(0,2), THREE(0,4), FOUR(2,0), FIVE(2,2), SIX(2,4), SEVEN(4,0), EIGHT(4,2), NINE(4,4);
+    ONE(0,0), TWO(0,2), THREE(0,4), FOUR(2,0), FIVE(2,2), SIX(2,4), SEVEN(4,0), EIGHT(4,2), NINE(4,4), INVALID(-1,-1);
 
     private final int row;
     private final int column;
@@ -39,6 +39,6 @@ enum Position {
         } else if (position == 9) {
             return Position.NINE;
         }
-        return null;
+        return Position.INVALID;
     }
 }
