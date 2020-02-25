@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class PositionTest {
 
-    Position position = Position.ONE;
+    private Position position = Position.ONE;
 
     @Test
     public void positionReturnsRowAs0IfInitializedWithONE() {
